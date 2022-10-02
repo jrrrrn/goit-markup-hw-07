@@ -1,15 +1,19 @@
-@use "../abstracts/variables" as v;
+@use "../../abstracts/variables" as v;
 // @use "../components";
 .header {
     border-bottom: 1px solid #ececec;
-    .container {
+.container {
         display: flex;
         justify-content: space-between;
 
     }
-        .logo {
+ .logo {
             margin-right: 90px;
         }
+                // .animate__pulse {
+                //     animation-duration: 1000ms;
+                //     animation-delay: 300ms;
+                // }
 }
 .nav-link {
     font-weight: 500;
@@ -34,10 +38,7 @@
     margin-right: 10px;
 }
 
-// .header .container {
-//     display: flex;
-//     justify-content: space-between;
-// }
+
 
 .nav-list,
 .navigation,
@@ -62,10 +63,7 @@
         }
 }
 
-// .header-address-link:hover .address-icon,
-// .header-address-link:focus .address-icon {
-//     fill: v.$accent-color;
-// }
+
 
 .address-link,
 .nav-link {

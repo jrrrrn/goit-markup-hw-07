@@ -1,0 +1,143 @@
+@use "../../abstracts/variables" as v;
+
+
+.footer {
+    background-color: #2f303a;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    .container {
+            display: flex;
+        }
+                .logo {
+                    display: inline-block;
+                    margin-bottom: 20px;
+        
+                    color: v.$dark-theme-logo-color;
+                }
+}
+
+.address-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-address {
+    line-height: 1.71;
+    color: rgba(255, 255, 255, 0.6);
+
+    &:not(:last-child) {
+            margin-bottom: 9px;
+        }
+}
+
+.phys-address {
+    color: v.$secondary-text-color;
+}
+
+
+
+.footer-address-column {
+    margin-right: 70px;
+}
+
+.footer-column-title {
+    margin-bottom: 20px;
+    padding-top: 10px;
+
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 1.17;
+    color: v.$secondary-text-color;
+}
+
+.join-column {
+    margin-right: 90px;
+}
+
+.socials-list {
+    display: flex;
+}
+
+.socials-list-item {
+    width: 44px;
+    height: 44px;
+
+    padding: 12px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+
+    transition: background-color 250ms v.$animation-timing-function;
+
+    cursor: pointer; 
+
+    &:not(:last-child) {
+            margin-right: 10px;
+        }
+                &:hover {
+                    background-color: v.$accent-color;
+                }
+}
+
+
+
+
+
+.footer-socials-icon {
+    fill: #fff;
+}
+
+.subscribe-form {
+    display: flex;
+}
+
+.subscribe-input {
+    width: 358px;
+    margin-right: 12px;
+    background-color: transparent;
+
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 16px;
+    padding-right: 16px;
+
+    border-radius: 4px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+    &:focus {
+            outline: 1px solid v.$accent-color;
+        }
+}
+
+.subscribe-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 200px;
+    height: 50px;
+
+    background-color: v.$accent-color;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px 0px #00000026;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+    color: v.$secondary-text-color;
+
+    cursor: pointer;
+
+    transition: background-color 250ms v.$animation-timing-function;
+    &:hover, &:focus {
+            background-color: #188ce8;
+        }
+}
+.subscribe-btn-text {
+    margin-right: 10px;
+}
