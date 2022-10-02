@@ -1,0 +1,84 @@
+@use "../abstracts/variables" as v;
+// @use "../components";
+.header {
+    border-bottom: 1px solid #ececec;
+    .container {
+        display: flex;
+        justify-content: space-between;
+
+    }
+        .logo {
+            margin-right: 90px;
+        }
+}
+.nav-link {
+    font-weight: 500;
+
+    color: v.$title-text-color;
+    letter-spacing: 0.02em;
+}
+
+.nav-list-item:not(:last-child),
+.header-address-link:not(:last-child) {
+    margin-right: 50px;
+}
+
+.nav-link,
+.header-address-link {
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+.address-icon {
+    fill: #757575;
+    margin-right: 10px;
+}
+
+// .header .container {
+//     display: flex;
+//     justify-content: space-between;
+// }
+
+.nav-list,
+.navigation,
+.header-address {
+    display: flex;
+    align-items: center;
+}
+
+.header-address-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    color: inherit;
+    .address-icon {
+            transition: fill 250ms v.$animation-timing-function;
+        }
+        &:hover .address-icon, &:focus .address-icon {
+            fill: v.$accent-color;
+        }
+}
+
+// .header-address-link:hover .address-icon,
+// .header-address-link:focus .address-icon {
+//     fill: v.$accent-color;
+// }
+
+.address-link,
+.nav-link {
+    transition: color 250ms v.$animation-timing-function;
+}
+
+.nav-link:hover,
+.address-link:hover,
+.nav-link:focus,
+.address-link:focus {
+    color: v.$accent-color;
+}
+
+.nav-link {
+    position: relative;
+}
