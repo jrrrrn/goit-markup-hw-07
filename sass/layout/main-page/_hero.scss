@@ -1,4 +1,5 @@
 @use "../../abstracts/variables" as v;
+@use "../../components";
 .hero {
     min-height: 600px;
     max-width: 1600px;
@@ -31,24 +32,24 @@
     color: v.$secondary-text-color;
 }
 
-.modal-button {
-    background-color: v.$accent-color;
-    color: v.$secondary-text-color;
+// .modal-button {
+//     background-color: v.$accent-color;
+//     color: v.$secondary-text-color;
 
-    margin-left: auto;
-    margin-right: auto;
+//     margin-left: auto;
+//     margin-right: auto;
 
-    font-family: inherit;
-    font-size: 16px;
-    font-weight: 700;
+//     font-family: inherit;
+//     font-size: 16px;
+//     font-weight: 700;
 
-    line-height: 1.9;
-    letter-spacing: 0.06em;
+//     line-height: 1.9;
+//     letter-spacing: 0.06em;
 
-    box-shadow: 0px 4px 4px 0px #00000026;
+//     box-shadow: 0px 4px 4px 0px #00000026;
 
-    transition: background-color 250ms v.$animation-timing-function;
-    &:hover, &:focus {
-            background-color: #188ce8;
-        }
-}
+//     transition: background-color 250ms v.$animation-timing-function;
+//     &:hover, &:focus {
+//             background-color: #188ce8;
+//         }
+// }

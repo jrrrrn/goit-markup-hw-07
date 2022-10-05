@@ -1,0 +1,112 @@
+@use "../abstracts/placeholders";
+@use "../abstracts/variables" as v;
+.modal-button {
+    @extend %btn;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 22px;
+    padding-right: 22px;
+    background-color: v.$accent-color;
+    color: v.$secondary-text-color;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    font-family: inherit;
+    // font-size: 16px;
+    font-weight: 700;
+
+    line-height: 1.9;
+    letter-spacing: 0.06em;
+
+    box-shadow: 0px 4px 4px 0px #00000026;
+
+    transition: background-color 250ms v.$animation-timing-function;
+
+    &:hover,
+    &:focus {
+        background-color: v.$btn-hover;
+    }
+}
+.subscribe-btn {
+    @extend %btn;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 200px;
+    height: 50px;
+
+    background-color: v.$accent-color;
+    // border: none;
+    // border-radius: 4px;
+    box-shadow: 0px 4px 4px 0px #00000026;
+
+    font-weight: 700;
+    // font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+    color: v.$secondary-text-color;
+
+    // cursor: pointer;
+
+    transition: background-color 250ms v.$animation-timing-function;
+
+    &:hover,
+    &:focus {
+        background-color: v.$btn-hover;
+    }
+}
+.user-data-form-btn {
+    @extend %btn;
+    // display: block;
+    width: 200px;
+    height: 50px;
+
+    margin-right: auto;
+    margin-left: auto;
+
+    background-color: v.$accent-color;
+    // border: none;
+    // border-radius: 4px;
+
+    box-shadow: 0px 4px 4px 0px #00000026;
+
+    font-weight: 700;
+    // font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+    color: v.$secondary-text-color;
+
+    // cursor: pointer;
+
+    &:hover,
+    &:focus {
+        background-color: v.$btn-hover;
+    }
+}
+.filter-btn {
+    @extend %btn;
+    // font-size: 16px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 22px;
+    padding-right: 22px;
+    font-weight: 500;
+
+    line-height: 1.62;
+    transition: background-color 250ms v.$animation-timing-function,
+        color 250ms v.$animation-timing-function,
+        box-shadow 250ms v.$animation-timing-function;
+
+    &:hover,
+    &:focus {
+        background-color: v.$accent-color;
+        color: v.$secondary-text-color;
+        box-shadow: 0px 2px 2px 0px #0000001f;
+    }
+}
+.current-btn {
+    background-color: v.$accent-color;
+    color: v.$secondary-text-color;
+}

@@ -1,5 +1,5 @@
 @use "../../abstracts/variables" as v;
-// @use "../components";
+// @use "../../components";
 .header {
     border-bottom: 1px solid #ececec;
 .container {
@@ -79,4 +79,26 @@
 
 .nav-link {
     position: relative;
+}
+.studio-current::after,
+.portfolio-current::after {
+    content: "";
+
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    width: 100%;
+    height: 4px;
+
+    background-repeat: no-repeat;
+}
+
+.studio-current::after {
+    background-image: url(../images/icons/underline-1.svg);
+}
+
+.portfolio-current::after {
+    background-image: url(../images/icons/underline-2.svg);
 }
