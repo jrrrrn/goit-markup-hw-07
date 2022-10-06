@@ -1,4 +1,5 @@
 @use "../../abstracts/variables" as v;
+@use "../../abstracts/placeholders";
 
 .modal-title {
     margin-bottom: 30px;
@@ -122,9 +123,10 @@
 }
 
 .modal-policy-checkbox-custom {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @extend %flex-centered;
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
     width: 16px;
     height: 15px;
 

@@ -336,6 +336,18 @@ body {
   cursor: pointer;
 }
 
+.header-address-link, .modal-policy-checkbox-custom, .regular-clients-item, .modal-close-button, .subscribe-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .modal-button {
   padding-top: 6px;
   padding-bottom: 6px;
@@ -359,15 +371,6 @@ body {
 }
 
 .subscribe-btn {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   width: 200px;
   height: 50px;
   background-color: #2196f3;
@@ -494,15 +497,6 @@ body {
 }
 
 .modal-close-button {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   width: 30px;
   height: 30px;
   margin-top: 8px;
@@ -522,6 +516,22 @@ body {
 }
 .modal-close-button:hover .modal-close-button-icon, .modal-close-button:focus .modal-close-button-icon {
   fill: #2196f3;
+}
+
+.socials-item {
+  width: 44px;
+  height: 44px;
+  padding: 12px;
+  border-radius: 50%;
+  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+}
+.socials-item:not(:last-child) {
+  margin-right: 10px;
+}
+.socials-item:hover {
+  background-color: #2196f3;
 }
 
 .hero {
@@ -662,22 +672,6 @@ body {
           justify-content: center;
 }
 
-.employee-socials-item {
-  width: 44px;
-  height: 44px;
-  padding: 12px;
-  border-radius: 50%;
-  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  cursor: pointer;
-}
-.employee-socials-item:not(:last-child) {
-  margin-right: 10px;
-}
-.employee-socials-item:hover {
-  background-color: #2196f3;
-}
-
 .employee-socials-icon {
   width: 20px;
   height: 20px;
@@ -696,15 +690,6 @@ body {
 }
 
 .regular-clients-item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   width: 170px;
   height: 92px;
   border: 1px solid #afb1b8;
@@ -865,15 +850,6 @@ body {
 }
 
 .modal-policy-checkbox-custom {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   width: 16px;
   height: 15px;
   margin-right: 7px;
@@ -940,15 +916,6 @@ body {
 }
 
 .header-address-link {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   font-weight: 500;
   letter-spacing: 0.02em;
   color: inherit;
@@ -1053,27 +1020,14 @@ body {
   margin-right: 90px;
 }
 
-.socials-list {
+.footer-socials-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.socials-list-item {
-  width: 44px;
-  height: 44px;
-  padding: 12px;
-  border-radius: 50%;
+.footer-socials-list-item {
   background-color: rgba(255, 255, 255, 0.1);
-  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  cursor: pointer;
-}
-.socials-list-item:not(:last-child) {
-  margin-right: 10px;
-}
-.socials-list-item:hover {
-  background-color: #2196f3;
 }
 
 .footer-socials-icon {

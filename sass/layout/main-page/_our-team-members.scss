@@ -19,7 +19,6 @@
             margin-right: 30px;
         }
 
-
 }
 
 .our-team-employee-name {
@@ -54,38 +53,15 @@
     justify-content: center;
 }
 
-.employee-socials-item {
-    width: 44px;
-    height: 44px;
-
-    padding: 12px;
-
-    border-radius: 50%;
-
-    transition: background-color 250ms v.$animation-timing-function;
-
-    cursor: pointer;
-
-    &:not(:last-child) {
-        margin-right: 10px;
-    }
-
-    &:hover {
-        background-color: v.$accent-color;
-    }
-}
-
-
 .employee-socials-icon {
     width: 20px;
     height: 20px;
-
     fill: #afb1b8;
 
     transition: fill 250ms v.$animation-timing-function;
 
     .employee-socials-item:hover & {
-            fill: #fff;
-        }
+        fill: #fff;
+    }
 }
 
