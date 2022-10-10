@@ -1,0 +1,35 @@
+@use "../../abstracts/variables" as v;
+@use "../../abstracts/placeholders";
+.regular-clients_list {
+    display: flex;
+}
+
+.regular-clients_item {
+    @extend %flex-centered;
+    width: 170px;
+    height: 92px;
+
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+    cursor: pointer;
+
+    transition: border-color 250ms v.$animation-timing-function;
+
+    &:not(:last-child) {
+            margin-right: 30px;
+        }
+                &:hover,
+                &:focus {
+                    border-color: #2196f3;
+        
+                    .regular-clients_icon {
+                        fill: v.$accent-color;
+                    }
+                }
+}
+
+.regular-clients_icon {
+    fill: #afb1b8;
+
+    transition: fill 250ms v.$animation-timing-function;
+}

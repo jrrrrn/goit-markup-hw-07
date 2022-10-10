@@ -1,0 +1,98 @@
+@use "../../abstracts/variables" as v;
+
+.footer {
+    background-color: #2f303a;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    .container {
+            display: flex;
+        }
+                .logo {
+                    display: inline-block;
+                    margin-bottom: 20px;
+        
+                    color: v.$dark-theme-logo-color;
+                }
+}
+
+.footer-address_list {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-address_link {
+    line-height: 1.71;
+    color: rgba(255, 255, 255, 0.6);
+
+    &:not(:last-child) {
+            margin-bottom: 9px;
+        }
+        &:first-child {
+            color: v.$secondary-text-color;}
+            &:hover,
+                &:focus {
+                    color: v.$accent-color;
+
+        }
+}
+.footer-address-column {
+    margin-right: 70px;
+}
+
+.footer-column_title {
+    margin-bottom: 20px;
+    padding-top: 10px;
+
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 1.17;
+    color: v.$secondary-text-color;
+}
+
+.join-column {
+    margin-right: 90px;
+}
+
+.footer-socials_list {
+    display: flex;
+
+}
+
+.footer-socials_item {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.footer-socials_icon {
+    fill: #fff;
+}
+
+.subscribe-column_form {
+    display: flex;
+}
+
+.subscribe-column_input {
+    width: 358px;
+    margin-right: 12px;
+    background-color: transparent;
+
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 16px;
+    padding-right: 16px;
+
+    border-radius: 4px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+    &:focus {
+            outline: 1px solid v.$accent-color;
+        }
+}
+.subscribe-btn_text {
+    margin-right: 10px;
+}
+
+

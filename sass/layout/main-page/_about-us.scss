@@ -1,0 +1,35 @@
+@use "../../abstracts/variables" as v;
+.about-us_list {
+    display: flex;
+}
+
+.about-us_item {
+.secondary-title {
+    margin-bottom: 10px;
+
+    font-size: 14px;
+    text-transform: uppercase;
+}
+&:not(:last-child) {
+    margin-right: 30px;
+}
+}
+
+.about-us_desc {
+    line-height: 1.74;
+}
+
+.about-us_icon {
+    width: 70px;
+    height: 70px;
+}
+
+.about-us_icon--bg {
+    width: 270px;
+    height: 120px;
+
+    margin-bottom: 30px;
+    padding: 25px 100px;
+
+    background-color: #f5f4fa;
+}

@@ -1,0 +1,11 @@
+@use "../../abstracts/variables" as v;
+.filters {
+    display: flex;
+    justify-content: center;
+
+    margin-bottom: 50px;
+}
+
+.filters_item:not(:last-child) {
+    margin-right: 10px;
+}
